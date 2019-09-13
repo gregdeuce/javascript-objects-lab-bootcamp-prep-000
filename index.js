@@ -15,5 +15,7 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value)  {
 }
 
 function deleteFromObjectByKey(object, key) {
+  var clone = object[key] = value
   delete object[key]
+  return object
 }
